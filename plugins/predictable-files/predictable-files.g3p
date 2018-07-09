@@ -2,7 +2,7 @@
   "name": "predictable-files",
   "description": "this plugin try to discover predictable files in a remote URL",
   "image": "golismero/golismero-plugin-predictable-files",
-  "baseCommand": "-c '/usr/local/bin/launch_plugin.sh {p} {} > /tmp/log 2> /tmp/error-log && cat /tmp/results.json'",
+  "baseCommand": "-c '/usr/local/bin/launch_plugin.sh {p} {} > /tmp/log 2> /tmp/error-log && cat /tmp/results.json' | g3cli format predict_files",
   "executionPlan": [
     {"condition": "{url}"}
   ]
