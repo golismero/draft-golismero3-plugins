@@ -1,0 +1,9 @@
+{
+  "name": "harvester",
+  "description": "Searches for target domains on public search engines to discover subdomains or emails.",
+  "image": "golismero/golismero-plugin-harvester",
+  "baseCommand": "{p} {}",
+  "executionPlan": [
+    {"condition": "{domain}"}
+  ]
+}
