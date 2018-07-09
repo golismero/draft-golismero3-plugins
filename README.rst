@@ -10,12 +10,22 @@ Official repository for Golismero 3 plugins
 +----------------+---------------------------------------------------------+
 
 Description
-============
+-----------
 
 This repository contains the plugins for Golismero 3
 
+Available Docker Images
+-----------------------
+
+- Wfuzz: image with wfuzz + fuzzdb wordlist inside. Into the directory /wordlist
+
+Available plugins
+-----------------
+
+- Predictable files: Discover predictable file for more than 30 different web servers
+
 Contributing
-============
+------------
 
 Any collaboration is welcome!
 
