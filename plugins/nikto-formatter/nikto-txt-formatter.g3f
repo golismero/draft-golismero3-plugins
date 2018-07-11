@@ -1,0 +1,7 @@
+{
+    "name": "nikto-txt",
+    "description": "Nikto TXT file parser",
+    "format": "nikto-txt",
+    "image": "golismero-python3-formatters",
+    "entrypoint": "/opt/formatters/nikto-txt-formatter.py"
+}
