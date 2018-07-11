@@ -1,0 +1,8 @@
+[
+    [{
+        "_id": 158546143386341648765945375425801317487,
+        "_type": "error",
+        "_tool": "Nikto - v2.1.5",
+        "error": "Empty Nikto scan results."
+    }]
+]

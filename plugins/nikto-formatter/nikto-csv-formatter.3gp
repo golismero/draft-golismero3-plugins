@@ -1,0 +1,7 @@
+{
+    "name": "nikto-csv",
+    "description": "Nikto CSV file parser",
+    "format": "nikto-csv",
+    "image": "golismero-python3-formatters",
+    "entrypoint": "/opt/formatters/nikto-csv-formatter.py"
+}

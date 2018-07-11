@@ -1,0 +1,26 @@
+#!/usr/local/bin/python3
+# -*- coding: utf-8 -*-
+
+#
+# This is a crude replacement for g3format until we have the real thing.
+# Usage:
+#   cat nmap.xml | g3format --format "nmap-xml" > nmap.g3d 
+#
+
+import base64
+import json
+import mmh3
+import sys
+
+format_tag = sys.argv[2]
+data = sys.stdin.read()
+data = data.encode("utf-8")
+data = base64.b64encode(data)
+data = data.decode("utf-8")
+capsule = {
+    "_id": mmh3.hash128(data),
+    "_type": "raw",
+    "format": format_tag,
+    "raw": data
+}
+json.dump(capsule, sys.stdout)
