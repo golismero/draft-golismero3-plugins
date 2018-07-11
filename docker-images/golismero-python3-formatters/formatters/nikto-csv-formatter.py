@@ -3,9 +3,9 @@
 
 import io
 import csv
-import mmh3
 import sys
 import json
+import mmh3
 import base64
 import traceback
 import urllib.parse
@@ -64,7 +64,6 @@ def main():
         try:
             TOOL = next(reader)[0].split("/")[0]
         except Exception:
-            raise
             simple_output("error", "Invalid Nikto scan results.")
             return
 
