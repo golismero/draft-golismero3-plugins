@@ -10,7 +10,7 @@ import base64
 import traceback
 import urllib.parse
 
-TOOL = "Nikto"
+TOOL = "nikto"
 
 def simple_object(key, value):
     "Create a simple key/value object."
@@ -64,7 +64,6 @@ def main():
             # First line is the Nikto version.
             line = txt.pop(0)
             assert line.startswith("- Nikto")
-            TOOL = line[2:]
 
             # Next, we have a separator.
             assert txt.pop(0) == "-" * 75
@@ -94,15 +93,15 @@ def main():
             line = txt.pop(0)
             if line.startswith("+ SSL Info:"):
                 ssl = True
-                while line != "-" * 75:
+                while line != ("-" * 75):
                     line = txt.pop(0)
+                line = txt.pop(0)
             else:
                 ssl = False
 
             # First line of the scan results is always the server banner.
-            assert line.startswith("+ Server: ")
+            assert line.startswith("+ Server: "), line
             banner = line[10:]
-            line = txt.pop(0)
 
             # Output the host, ip, port and banner objects.
             host = host.lower()
@@ -117,11 +116,28 @@ def main():
             do_output(d_obj, p_obj)             # not sure about these two...
             do_output(d_obj, p_obj, b_obj)      # do we really need them?
 
+            # Output the target URL object.
+            if ssl:
+                scheme = "https"
+            else:
+                scheme = "http"
+            if ssl and port == "443":
+                url = "%s://%s/" % (scheme, host)
+            elif not ssl and port == "80":
+                url = "%s://%s/" % (scheme, host)
+            else:
+                url = "%s://%s:%s/" % (scheme, host, port)
+            u_obj = simple_object("url", url)
+            if url not in urls_seen:
+                urls_seen.add(url)
+                do_output(u_obj)
+
             # At this point all the remaining results from the scan will appear.
             # All lines begin with a plus sign.
             # Normal log lines may have any text whatsoever, but issues
             # will always start with the OSVDB code.
-            while True:
+            while txt:
+                line = txt.pop(0)
                 try:
                     m = re_vuln.match(line)
                     if m is not None:
@@ -164,11 +180,6 @@ def main():
                 # On error send an error object.
                 except Exception:
                     simple_output("error", traceback.format_exc())
-
-                # Continue parsing the text until we run out of lines.
-                if not txt:
-                    break
-                line = txt.pop(0)
 
         except Exception:
             simple_output("error", "Invalid Nikto scan results.")

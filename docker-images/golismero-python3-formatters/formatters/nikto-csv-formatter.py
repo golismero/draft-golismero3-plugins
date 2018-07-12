@@ -10,7 +10,7 @@ import base64
 import traceback
 import urllib.parse
 
-TOOL = "Nikto"
+TOOL = "nikto"
 
 def simple_object(key, value):
     "Create a simple key/value object."
@@ -62,7 +62,7 @@ def main():
         # First line is the Nikto version.
         # If we fail here, the file was empty or malformed.
         try:
-            TOOL = next(reader)[0].split("/")[0]
+            assert next(reader)[0].split("/")[0].split("-")[0].strip() == "Nikto"
         except Exception:
             simple_output("error", "Invalid Nikto scan results.")
             return
@@ -103,7 +103,8 @@ def main():
                 host = host.lower()
                 vuln_tag = vuln_tag.upper()
                 method = method.upper()
-                
+                message = message[ message.find(" ") + 1 : ]
+
                 # Extract URLs. For non standard port numbers, assume plaintext.
                 if port == "443":
                     url = urllib.parse.urljoin("https://%s/" % host, path)

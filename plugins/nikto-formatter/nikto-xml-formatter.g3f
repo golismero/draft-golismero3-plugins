@@ -1,0 +1,7 @@
+{
+    "name": "nikto-xml",
+    "description": "Nikto XML file parser",
+    "format": "nikto-xml",
+    "image": "golismero-python3-formatters",
+    "entrypoint": "/opt/formatters/nikto-xml-formatter.py"
+}

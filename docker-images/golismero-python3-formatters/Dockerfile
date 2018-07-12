@@ -1,7 +1,7 @@
 FROM python:3.6-alpine
 
 RUN apk update && \
-    apk add g++ && \
+    apk add g++ libxslt-dev && \
     pip install -U pip
 
 COPY requirements.txt /tmp
